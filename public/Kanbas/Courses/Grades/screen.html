@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+    
+  </head>
+  <body>
+    <!-- Implement links to Kanbas and Course Navigation -->
+    <div class="d-flex">
+        <div class="d-none d-md-block">
+          <ul class="wd-kanbas-navigation">
+            <li><a href="http://northeastern.edu">N</a></li>  
+            <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user-circle" style="color: white;"></i><br/>Account</a></li>
+            <li><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i><br/>Dashboard</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-address-book"></i><br/>Courses</a> </li>
+            <li><a href="#"><i class="fa fa-calendar"></i><br/>Calendar</a></li>
+            <li><a href="#"><i class="fa fa-inbox fa-4x"></i><br/>Inbox</a></li>
+            <li><a href="#"><i class="fa fa-clock-o"></i><br/>History</a></li>
+            <li><a href="#"><i class="fa fa-slideshare"></i><br/>Studio</a> </li>
+            <li><a href="#"><i class="fa fa-bars"></i><br/>Commons</a></li>
+            <li><a href="#"><i class="fa fa-question-circle-o"></i><br/>Help</a></li>
+        </ul> 
+        </div>
+        <div class="d-none d-md-block p-3 pt-5 ">
+          <ul class="wd-navigation">
+            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+            <li><a href="http://piazza.com">Piazza</a></li>
+            <li><a href="#">Zoom</a></li>
+            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+          </ul>
+        </div>
+        <div class="flex-fill">
+        <nav class="wd-breadcrumb" style="--bs-breadcrumb-divider: '>'; color: red" aria-label="breadcrumb">
+          <ol class="breadcrumb m-4">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i> CS5610.SP2024.Section1</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Grades</li>
+          </ol>
+        </nav>
+        <hr>
+        <span class="float-end">
+          <button type="button" class="btn btn-light border border-dark m-1"><i class="fa fa-arrow-circle-right"></i> Import</button>
+          <button type="button" class="btn btn-light border border-dark m-1 dropdown-toggle" data-toggle="dropdown"><i class="fa fa-arrow-circle-left"></i> Export</button>
+         <button type="button" class="btn btn-light border border-dark m-1 p-2 me-3"><i class="fa fa-cog"></i></button>
+        </span>
+        <br><br>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="inputEmail4">Student Names</label>
+            <input type="text" class="form-control" placeholder="Search Students">
+          </div>
+          <div class="col-md-5">
+            <label for="inputEmail4">Assignment Names</label>
+            <input type="text" class="form-control" placeholder="Search Assignments">
+          </div>
+        </div>
+      
+        <br/>
+        <button type="button" class="btn btn-light border border-dark"><i class="fa fa-filter"></i> Apply Filters</button>
+      
+        <br/>
+        <br/>
+      
+        <div class="table-responsive me-4">
+            <table width="100%" class="table table-bordered table-striped">
+                                
+              <thead>
+                <tr>
+                  <th>Student Name</th>
+                  <th>A1 SETUP <br/> Out of 100</th>
+                  <th>A2 HTML <br/> Out of 100</th>
+                  <th>A3 CSS <br/> Out of 100</th>
+                  <th>A4 BOOTSTRAP <br/> Out of 100</th>
+                </tr>
+              </thead>
+      
+      
+              <tbody>
+                <tr>
+                  <td>Harry Potter</td>
+                  <td>100</td>
+                  <td class="col-sm-3"><input class="form-control" type="number" value="99"/></td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Jane Addams</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>95</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>John Smith</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td> 
+                  <td class="col-sm-3"><input class="form-control type="number" value="99"/></td>
+                </tr>
+                <tr>
+                  <td>Rudaiba Adnin</td>
+                  <td>96</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+      
+              <tfoot>
+              </tfoot>
+            </table>
+            </td>
+            </tr>
+          </table>
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>

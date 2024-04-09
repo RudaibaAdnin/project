@@ -1,0 +1,7 @@
+.wd-breadcrumb li.wd-active a {
+    color: black;
+  }
+  .wd-breadcrumb a {
+    color: red;
+    text-decoration: none;
+  }

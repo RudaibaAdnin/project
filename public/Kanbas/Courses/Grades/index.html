@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Grade Index</title>
+    <head>
+      <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+      <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/Kanbas/styles.css" />
+      <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    </head>
+  </head>
+  <body>
+
+  <br/>
+  
+  <span class="float-end">
+    <button type="button" class="btn btn-light border border-dark m-1"><i class="fa fa-arrow-circle-right"></i> Import</button>
+    <button type="button" class="btn btn-light border border-dark m-1 dropdown-toggle" data-toggle="dropdown"><i class="fa fa-arrow-circle-left"></i> Export</button>
+   <button type="button" class="btn btn-light border border-dark m-1 p-2 me-3"><i class="fa fa-cog"></i></button>
+  </span>
+  <br><br>
+  <div class="row">
+    <div class="col-md-5">
+      <label for="inputEmail4">Student Names</label>
+      <input type="text" class="form-control" placeholder="Search Students">
+    </div>
+    <div class="col-md-5">
+      <label for="inputEmail4">Assignment Names</label>
+      <input type="text" class="form-control" placeholder="Search Assignments">
+    </div>
+  </div>
+
+  <br/>
+  <button type="button" class="btn btn-light border border-dark"><i class="fa fa-filter"></i> Apply Filters</button>
+
+  <br/>
+  <br/>
+
+  <div class="table-responsive me-4">
+      <table width="100%" class="table table-bordered table-striped">
+                          
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>A1 SETUP <br/> Out of 100</th>
+            <th>A2 HTML <br/> Out of 100</th>
+            <th>A3 CSS <br/> Out of 100</th>
+            <th>A4 BOOTSTRAP <br/> Out of 100</th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr>
+            <td>Harry Potter</td>
+            <td>100</td>
+            <td class="col-sm-3"><input class="form-control" type="number" value="99"/></td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Jane Addams</td>
+            <td>100</td>
+            <td>100</td>
+            <td>95</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td> 
+            <td class="col-sm-3"><input class="form-control type="number" value="99"/></td>
+          </tr>
+          <tr>
+            <td>Rudaiba Adnin</td>
+            <td>96</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+        </tfoot>
+      </table>
+      </td>
+      </tr>
+    </table>
+    </div>
+      
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <title>Settings Screen</title>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+   <!---- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/> -->
+  </head>
+  <body>
+      
+    <table border="0" width="100%">
+      <tr>
+        <td valign="top">
+
+          <ul class="wd-kanbas-navigation">
+            <li><a href="http://northeastern.edu">N</a></li>  
+            <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user-circle" style="color: white;"></i><br/>Account</a></li>
+            <li><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i><br/>Dashboard</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-address-book" aria-hidden="true"></i><br/>Courses</a> </li>
+            <li> <a href="#"><i class="fa fa-calendar"></i><br/>Calendar</a></li>
+            <li><a href="#"><i class="fa fa-inbox fa-4x" aria-hidden="true"></i><br/>Inbox</a></li>
+            <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i><br/>History</a></li>
+            <li><a href="#"><i class="fa fa-slideshare" aria-hidden="true"></i><br/>Studio</a> </li>
+            <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i><br/>Commons</a></li>
+            <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i><br/>Help</a></li>
+          </ul> 
+          
+        </td>
+        <td valign="top">
+            <ul>
+              <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+              <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+              <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
+              <li><a href="/Kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
+              <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+              <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+              <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
+              <li><a href="/Kanbas/Courses/Ponopto Video/screen.html">Ponopto Video</a></li>
+              <li><a href="/Kanbas/Courses/Discussions/index.html">Discussions</a></li>
+              <li><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
+              <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
+              <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
+              <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
+              <li><a href="/Kanbas/Courses/Outcomes/index.html">Outcomes</a></li>
+              <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
+              <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+              <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+            </ul>
+          </td>
+        <td valign="top">
+            <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a> |
+            <a href="#"> Tabs</a> |
+            <a href="#"> Section</a> |
+            <a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a> |
+            <a href="#">Feature Options</a> |
+            <a href="#">Integrations</a> |
+    
+          <form>
+            <br/>
+            <label>Image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <br/>
+            <br/>
+        
+            <label>Name: CS 5610</label>
+            <br/>
+            <br/>
+        
+            <label>Course Code: CS 5610</label>
+            <br/>
+            <br/>
+        
+            <label>Course Template:</label>
+            <input type="radio" id="largecourse"> <label for="largecourse">Enable Course as a Course Template</label>
+            <br/>
+            <br/>
+        
+            <label>Time Zone:</label>
+            <input type="datetime-local">
+            <br/>
+            <br/>
+        
+            <label>SIS ID:</label>
+            <input type="text">
+            <br/>
+            <br/>
+        
+            <label>Subaccount: Undergrad</label>
+            <br/>
+            <br/>
+        
+            <label>Term: Spring 2024</label>
+            <br/>
+            <br/>
+        
+            <label>Participation:</label>
+            <select>
+                <option>Term</option>
+            </select>
+            <br/>
+            <br/>
+        
+            <label>Start</label>
+            <br/>
+            <input type="Date">
+            <br/>
+            <br/>
+        
+            <label>End</label>
+            <br/>
+            <input type="Date">
+            <br/>
+            <br/>
+        
+            <label>Restriction</label>
+            <br/>
+            <input type="checkbox" id="largecourse"> <label for="largecourse">Restrict students from viewing this course before term start date</label>
+            <br/>
+            <input type="checkbox" id="largecourse"> <label for="largecourse">Restrict students from viewing thiis course after term end date</label>
+            <br/>
+            <br/>
+            
+            
+            <label>Default Due Time:</label>
+            <select>
+                <option>Account Default Time (11:59 PM)</option>
+            </select>
+            <br/>
+            <br/>
+        
+            <label>Language:</label>
+            <select>
+                <option>Default to English</option>
+            </select>
+            <br/>
+            <br/>
+        
+            <label>File Storage: 1000 Megabites</label>
+            <br/>
+            <br/>
+        
+            <label>Large Course:</label>
+            <input type="radio" id="largecourse"> <label for="largecourse">Launch SpeedGrader Filtered by Student Group</label>
+            <br/>
+            <br/>
+        
+            <label>Grading Scheme:</label>
+            <input type="radio" id="largecourse"> <label for="largecourse">Enable Course Grading Scheme</label>
+            <br/>
+            <br/>
+        
+            <label>Licence:</label>
+            <select>
+                <option>Private (Copyrighted)</option>
+            </select>
+            <br/>
+            <br/>
+        
+            <label>File Copyright:</label>
+            <input type="radio" id="largecourse"> <label for="largecourse">Copyright and Licence Information should be provided</label>
+            <br/>
+            <br/>
+        
+            <label>Visibility:</label>
+            <input type="radio" id="largecourse"> <label for="largecourse">Include this course in the public course index</label>
+            <br/>
+            <br/>
+        
+            <label>Format:</label>
+            <select>
+                <option>On-Campus</option>
+            </select>
+            <br/>
+            <br/>
+        
+        
+            <label>Description:</label>
+            <textarea cols="30" rows="4"></textarea>
+            <br/>
+            <a href="#"> More Options</a>
+            <br/>
+            <br/>
+        
+            <a href="/Kanbas/Account/Profile/Edit/screen.html"> <button type="button" style="position: absolute; right: 80;">Update Course Details</button></a>
+        
+        </form>
+        </td>
+    </tr>
+    </table>
+
+</body>
+</html>
