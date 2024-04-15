@@ -6,7 +6,7 @@ const request = axios.create({
   withCredentials: true,
 });
 
-const API_BASE = "https://kanbas-node-server-app-projectagain.onrender.com";
+const API_BASE = "https://project-backend-wpnp.onrender.com";
 //const API_BASE = process.env.REACT_APP_API_BASE;
 const COURSES_API = `${API_BASE}/api/courses`;
 const MODULES_API = `${API_BASE}/api/modules`;
