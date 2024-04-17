@@ -102,7 +102,11 @@ function Quizzes() {
                     {quiz.name}
                   </Link>
                   <br />
-                  <small className="text-muted p-2">{quiz.description}</small>
+                  <small className="text-muted p-2">{quiz.description}</small> |
+                  <small className="text-muted p-2">Due: {quiz.dueDate}</small> |
+                  <small className="text-muted p-2">Available: {quiz.availableDate}</small> |
+                  <small className="text-muted p-2">Until: {quiz.untilDate}</small> |
+                  <small className="text-muted p-2">Points: {quiz.points}</small>
                   <span className="float-end">
                   <button className={`btn ${quiz.publish === "yes" ? "btn-secondary" : "btn-primary"} m-2`}
                       onClick={() => togglePublish(quiz._id)}

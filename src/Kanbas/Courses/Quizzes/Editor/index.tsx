@@ -12,6 +12,7 @@ import { updateQuestion, setQuestion, setQuestions, deleteQuestion } from "./Que
 import { LabState} from "../../../store";
 import * as client from "../client";
 import * as clientQuestion from "./Questions/client"
+import { parse } from "path";
 
 
 function QuizEditor() {
@@ -32,14 +33,29 @@ function QuizEditor() {
     };
 
     const handleSaveQuiz = async () => {
+      const calculateTotalPoints = () => {
+        let totalPoints = 0;
+        questions.forEach((question) => {
+          totalPoints += Number(question.points);
+        });
+        console.log(totalPoints);
+        return totalPoints;
+      };
+      let totalPoints = calculateTotalPoints();
+      console.log("Total Points:", totalPoints);
       if (quizId === "add") {
         // Create a new quiz
-        const newQuiz = await client.createQuiz(courseId, quiz);
+        const tempQuiz = { ...quiz, points: totalPoints };
+        console.log("Points while adding:", tempQuiz.points);
+        const newQuiz = await client.createQuiz(courseId, tempQuiz);
         dispatch(setQuiz(newQuiz)); // Assuming you have an action to set a single quiz
       } else {
         // Update existing quiz
-        await client.updateQuiz(quiz);
-        dispatch(updateQuiz(quiz));
+        
+        const tempQuiz = { ...quiz, points: totalPoints };
+        console.log("Points while updating:", tempQuiz.points);
+        await client.updateQuiz(tempQuiz);
+        dispatch(updateQuiz(tempQuiz));
       }
       navigate(`/Kanbas/Courses/${courseId}/Quizzes`);
     };
@@ -117,6 +133,8 @@ function QuizEditor() {
                   </Link>
                   <br />
                   <small className="text-muted p-2">{question.description}</small>
+                  <br />
+                  <small className="text-muted p-2">Points: {question.points}</small>
                   <span className="float-end">
                     <Link
                      to={`/Kanbas/Courses/${courseId}/Quizzes/${quiz._id}/Questions/${question._id}`} 

@@ -4,8 +4,8 @@ const request = axios.create({
 });
 //const COURSES_API = "http://localhost:4000/api/courses";
 //https://kanbas-node-server-app-5635.onrender.com
-const API_BASE = "https://project-backend-wpnp.onrender.com";
-//const API_BASE = process.env.REACT_APP_API_BASE;
+// const API_BASE = "https://project-backend-wpnp.onrender.com";
+const API_BASE = process.env.REACT_APP_API_BASE;
 const COURSES_API = `${API_BASE}/api/courses`;
 const AUTHORS_API = `${API_BASE}/api/author`;
 
@@ -23,6 +23,7 @@ export const addCourse = async (course) => {
     return response.data;
 };  
 export const findAllCourses = async () => {
+    console.log(API_BASE)
     const response = await request.get(COURSES_API);
     return response.data;
 };

@@ -2,8 +2,8 @@ import axios from "axios";
 const request = axios.create({
   withCredentials: true,
 });
-const BASE_API = "https://project-backend-wpnp.onrender.com";
-//const BASE_API = process.env.REACT_APP_API_BASE;
+// const BASE_API = "https://project-backend-wpnp.onrender.com";
+const BASE_API = process.env.REACT_APP_API_BASE;
 export const USERS_API = `${BASE_API}/api/users`;
 export interface User { _id: string; username: string; password: string; role: string;
 firstName: string, lastName: string };

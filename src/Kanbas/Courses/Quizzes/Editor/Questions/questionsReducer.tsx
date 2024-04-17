@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState = {
-  questions: [{ _id: "0", name: "New Question 123", description: "Question description",  points: "0", course: "random", type: "MULTIPLECHOICE"}],
-  question: { _id: "0", name: "New Question 123", description: "Question description",  points: "0", course: "random", type: "MULTIPLECHOICE"},
+  questions: [{ _id: "0", name: "New Question 123", description: "Question description",  points: 0, course: "random", type: "MULTIPLECHOICE"}],
+  question: { _id: "0", name: "New Question 123", description: "Question description",  points: 0, course: "random", type: "MULTIPLECHOICE"},
 };
 
 

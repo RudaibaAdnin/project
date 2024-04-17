@@ -36,6 +36,7 @@ export type quizType = {
   webcamRequired: string; // 'Yes' | 'No'
   lockQuestionsAfterAnswering: string; // 'Yes' | 'No'
   publish: string;
+  points: number;
 };
 
 
@@ -48,8 +49,7 @@ export type questionType = {
   description: string;
   options: string;
   correctAnswer: string;
-  points: string;
-
+  points: number;
 };
 
 export type moduleType = {
